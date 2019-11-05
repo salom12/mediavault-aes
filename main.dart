@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
           child: RaisedButton(
             child: Text('baka'),
             onPressed: () {
-              var x = AES.cryptoJsEncrypt(
+              var x = AES.Encrypt(
                   data: 'baka', passpharse: 'abcdefghijuklmno0123456789012345');
               print('Encrypted data: ' + x);
             },
